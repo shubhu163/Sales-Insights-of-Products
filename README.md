@@ -31,7 +31,7 @@
 1. Show total revenue in year 2020,
 
     `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.currency="INR\r" or transactions.currency="USD\r";`
-	
+    	
 1. Show total revenue in year 2020, January Month,
 
     `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and and date.month_name="January" and (transactions.currency="INR\r" or transactions.currency="USD\r");`
@@ -41,6 +41,7 @@
     `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020
 and transactions.market_code="Mark001";`
 
+![image](https://user-images.githubusercontent.com/71623089/210854301-eb6eed17-ed15-4bce-81a1-8c30e4b4e0b1.png)
 
 
 
